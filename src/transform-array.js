@@ -1,5 +1,6 @@
 module.exports = function transform(arr) {
-  let newArr=arr;
+  let newArr;
+  newArr=arr;
   for(let i=0;i<newArr.length;i++){
     if(newArr[i]==`--discard-next`){
       if(typeof newArr[i+1] =='undefined'){
